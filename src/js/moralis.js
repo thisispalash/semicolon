@@ -7,7 +7,7 @@ async function login() {
   try {
     user = await Moralis.authenticate();
     console.log('signed in!')
-    location.href = 'pages/home.html'
+    location.href = 'pages/home'
   } catch (error) {
     console.log(error);
   }
