@@ -1,5 +1,8 @@
 checkUser = async () => {
-  if (window.location.pathname === '/') { return }
+  if (
+    window.location.pathname === '/'
+    || window.location.pathname === 'semicolon' // for gh-pages
+  ) { return }
   const current = Moralis.User.current()
   if (!current) {
     console.log('no user signed in')
