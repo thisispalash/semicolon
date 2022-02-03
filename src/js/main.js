@@ -13,3 +13,17 @@ checkUser = async () => {
     console.log(current)
   }
 }
+
+// Nav Buttons
+
+$("#homeBtn").on("click", () => {
+  location.href = "/pages/home"
+})
+
+$("#readBtn").on("click", () => {
+  location.href = "/pages/query"
+})
+
+$("#writeBtn").on("click", () => {
+  location.href = "/pages/write"
+})
