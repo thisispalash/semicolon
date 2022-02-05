@@ -7,10 +7,12 @@ checkUser = async () => {
   const current = Moralis.User.current()
   if (!current) {
     console.log('no user signed in')
+    location.href = '/semicolon/' // for gh-pages
     location.href = '/'
   } else {
     console.log('user signed in')
-    console.log(current)
+    const acc = current.get('accounts')[0]
+    $('footer').html(acc)
   }
 }
 
