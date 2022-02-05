@@ -21,7 +21,7 @@ contract SemicolonFingers is ERC721URIStorage {
     StoryStruct[] private _stories;
     Counters.Counter private _tokens;
 
-    constructor() public ERC721("Semicolon", "SMF") {}
+    constructor() ERC721("Semicolon", "SMF") {}
 
     function mintStory(address _creator, string memory tokenURI) public returns (uint256) {
 
@@ -44,7 +44,7 @@ contract SemicolonFingers is ERC721URIStorage {
         return _id;
     }
 
-    function getStory(uint256 _id) public returns (address) {
+    function getStory(uint256 _id) public view returns (address) {
         if(!_storyMap[_id].exists) revert();
         return address(_storyMap[_id].story);
     }

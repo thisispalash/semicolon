@@ -11,7 +11,7 @@ contract Story is ERC721URIStorage {
 
     Counters.Counter private _tokens;
 
-    constructor() public ERC721("Fingers", "reSMF") {}
+    constructor() ERC721("Fingers", "reSMF") {}
 
     function mintNFT(address recipient, string memory tokenURI) public returns (uint256) {
         
