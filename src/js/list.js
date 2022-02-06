@@ -4,7 +4,7 @@ async function initPage() {
   let lum = Number(localStorage.getItem('lum'))
   let img = localStorage.getItem('img')
   let heading = hue + '; ' + sat + '; ' + lum
-  $('#heading').html(`<img src="${img}" width="100" height="100" id="semicolon"> ${heading}`)
+  $('#heading').html(`<img src="${img}" width="75" height="75" id="semicolon" class="img-fluid rounded-start m-2"> ${heading}`)
 
   const options = { chain: 'mumbai', address: '0x964d85d9D41615450dFC90c6571a9bF552aCE015' };
   const NFTs = await Moralis.Web3API.token.getAllTokenIds(options);

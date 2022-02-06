@@ -26,7 +26,7 @@ async function loadStory() {
   if (!story) $('#story').html('token does not exist')
   else {
     $('#story').html(story)
-    $('#heading').html(`<img src="${img}" width="100" height="100" id="semicolon"> ${heading}`)
+    $('#heading').html(`<img src="${img}" width="75" height="75" id="semicolon" class="img-fluid rounded-start m-2"> ${heading}`)
   }
 }
 
