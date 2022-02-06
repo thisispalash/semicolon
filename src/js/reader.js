@@ -79,9 +79,10 @@ async function remint() {
 
   const txn = await Moralis.executeFunction(sendOptions);
   console.log(txn.hash)
+  $('#heading').html(`
+    Confirming <a href="https://mumbai.polygonscan.com/tx/${txn.hash}" target="_blank">txn</a>...
+  `) // inform user
   await txn.wait(5);
-
-  alert('minted and confirmed!')
 
   location.href = 'home'
 

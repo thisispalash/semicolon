@@ -39,9 +39,11 @@ async function mint() {
   const txn = await Moralis.executeFunction(sendOptions);
   console.log(txn.hash)
 
-  $('#heading').html('Confirming txn') // inform user
+  $('#heading').html(`
+    Confirming <a href="https://mumbai.polygonscan.com/tx/${txn.hash}" target="_blank">txn</a>...
+  `) // inform user
   await txn.wait(5);
 
-
+  location.href = 'home'
 
 }
