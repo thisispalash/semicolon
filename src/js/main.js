@@ -17,6 +17,10 @@ checkUser = async () => {
   }
 }
 
+function readStory(_id) {
+  console.log(`loading story numbah ${_id}`)
+}
+
 // Nav Buttons
 
 $("#homeBtn").on("click", () => {
