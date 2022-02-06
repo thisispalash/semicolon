@@ -5,8 +5,8 @@ async function loadStory() {
   $('#heading').html(heading)
 
   const addr = Moralis.User.current().get('accounts')[0] 
-  const options = { chain: 'mumbai', address: addr, token_address: '0x964d85d9D41615450dFC90c6571a9bF552aCE015' };
-  const NFTs = await Moralis.Web3API.account.getNFTsForContract(options);
+  const options = { chain: 'mumbai', address: '0x964d85d9D41615450dFC90c6571a9bF552aCE015' };
+  const NFTs = await Moralis.Web3API.token.getAllTokenIds(options);
   var story, img;
 
   NFTs.result.forEach( token => {
