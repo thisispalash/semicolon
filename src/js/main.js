@@ -13,6 +13,7 @@ checkUser = async () => {
     console.log('user signed in')
     const acc = current.get('accounts')[0]
     $('footer').html(acc)
+    Moralis.enableWeb3()
   }
 }
 
