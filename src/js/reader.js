@@ -37,7 +37,7 @@ async function remint() {
   let tokenID = localStorage.getItem('tokenID')
 
   // lookup story contract address
-  let abi = await fetch('abi.json')
+  let abi = await fetch('../src/abi/semicolon.json')
   const mainABI = await abi.json()
   const readOptions = {
     contractAddress: '0x964d85d9D41615450dFC90c6571a9bF552aCE015',
@@ -64,7 +64,7 @@ async function remint() {
   // build options
   const url = file._ipfs
   const user = Moralis.User.current().get('accounts')[0]
-  let abi2 = await fetch('story.json')
+  let abi2 = await fetch('../src/abi/story.json')
   const storyABI = await abi2.json()
 
   const sendOptions = {
