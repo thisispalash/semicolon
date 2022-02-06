@@ -75,12 +75,6 @@
 
               <div class="card bg-dark mb-3">
                 <img src="../assets/arms-400.png" class="card-img-top">
-                <div class="card-body">
-                  <p class="card-text">
-                    <a class="text-decoration-none">etherscan</a>
-                  </p>
-                  <a href="#" class="btn btn-sm btn-outline-light">Read Story</a>
-                </div>
               </div>
 
             </div>
@@ -295,7 +289,10 @@
 <script src="../src/js/moralis.js"></script>
 
 <script type="text/javascript">
-  $('document').ready(checkUser)
+  $('document').ready(() => {
+    checkUser();
+    checkNFTs();
+  })
   $('#loginBtn').on('click', login)
 </script>
 
