@@ -31,7 +31,6 @@ async function mint() {
     functionName: 'mintStory',
     abi: ABI,
     params: {
-      _newMessage: "Hello Moralis",
       _creator: recepient,
       tokenURI: url
     },
@@ -39,7 +38,6 @@ async function mint() {
 
   const txn = await Moralis.executeFunction(sendOptions);
   console.log(txn.hash)
-  console.log(txn)
 
   $('#heading').html('Confirming txn') // inform user
   await txn.wait(5);
