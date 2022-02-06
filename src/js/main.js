@@ -26,13 +26,18 @@ function readStory(_id) {
 // Nav Buttons
 
 $("#homeBtn").on("click", () => {
+  console.log('going home..')
   location.href = "home"
 })
 
 $("#readBtn").on("click", () => {
+  console.log('going to search..')
   location.href = "query"
 })
 
 $("#writeBtn").on("click", () => {
+  console.log('going to write..')
   location.href = "write"
 })
+
+console.log('end `main.js`')

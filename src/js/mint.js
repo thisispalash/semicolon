@@ -47,3 +47,5 @@ async function mint() {
   location.href = 'home'
 
 }
+
+console.log('end `mint.js`')

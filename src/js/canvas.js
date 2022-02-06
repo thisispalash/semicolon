@@ -37,3 +37,5 @@ function loadCanvas() {
   css_root.style.setProperty('--hue', hue)
   updateCanvas()
 }
+
+console.log('end `canvas.js`')

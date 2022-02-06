@@ -57,3 +57,5 @@ async function initPage() {
   parent.html(code)
 
 }
+
+console.log('end `list.js`')

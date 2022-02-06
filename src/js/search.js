@@ -17,3 +17,5 @@ function lookupID() {
   localStorage.setItem('tokenID', id)
   location.href = 'read'
 }
+
+console.log('end `search.js`')

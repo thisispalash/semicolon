@@ -91,3 +91,5 @@ async function remint() {
 function stream() {
   console.log('stream opening...')
 }
+
+console.log('end `reader.js`')
