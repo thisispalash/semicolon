@@ -3,9 +3,11 @@ function lookupHSL() {
   let hue = $('#h_val').val()
   let sat = $('#s_val').val()
   let lum = $('#l_val').val()
+  let cv = document.getElementById('myCanvas')
   localStorage.setItem('hue', hue)
   localStorage.setItem('sat', sat)
   localStorage.setItem('lum', lum)
+  localStorage.setItem('img', cv.toDataURL())
   location.href = 'list'
 }
 
