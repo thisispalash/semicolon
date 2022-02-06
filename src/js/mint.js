@@ -23,7 +23,7 @@ async function mint() {
   // Moralis.executeFunction stuff below
   const recepient = Moralis.User.current().get('accounts')[0]
   const url = file._ipfs
-  let abi = await fetch('../../contracts/abi.json')
+  let abi = await fetch('abi.json')
   const ABI = await abi.json() 
 
   const sendOptions = {
