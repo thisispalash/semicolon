@@ -19,6 +19,8 @@ checkUser = async () => {
 
 function readStory(_id) {
   console.log(`loading story numbah ${_id}`)
+  localStorage.setItem('tokenID', _id)
+  location.href = 'read'
 }
 
 // Nav Buttons
