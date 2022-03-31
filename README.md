@@ -1,6 +1,0 @@
-# ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fthisispalash%2Fsemicolon&count_bg=%2340D31F&title_bg=%236C6E68&icon=&icon_color=%23111010&title=views&edge_flat=false) Semicolon Fingers
-> Mint a [heartwarming] story with a semicolon tattoo as an NFT
-
-> Semicolon Fingers Main Contract deployed on [`mumbai` testnet](https://mumbai.polygonscan.com/address/0x964d85d9D41615450dFC90c6571a9bF552aCE015).
-
-This project is an attempt to raise awareness about the semicolon tattoo which is associated with mental health. It is also born out of a frustration of people using the amazing web3 technology very superficially, such as NFT flipping. Semicolon fingers provides a platform to mint colourful semicolon tattoo NFTs along with a story. Users decide on their mood by selecting a hue and how much they are feeling that hue by selecting saturation. They then write out their story and mint it as an NFT with a semicolon tattoo. Other users may read stories filtered by hues or directly by a token [read: story] ID. If the story they be reading touches their heart, they may choose to mint that story and hodl it in their wallet as a token of support. A more complete version of the dApp will also include Superfluid money streaming so people may potentially earn money for simply speaking their hearts out.
